@@ -1,34 +1,30 @@
-.conteudo-principal { display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-max-width: 1200px;
-width: 100%;
-margin: 0 auto;
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+:root {
+    --bg-color: #222831; 
+    --primary-color: #DDDDDD;
+    --secondary-color: #F05454;
+    --font: "nunito sans",sans-serif;
 }
-.titulo-principal { text-align: left;
-    width: 100%;
-    font-size: 32px;
+body{
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: var(--font);
+    height: 100vh;
+    margin: 0 ;
+}
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
     }
-    <h2 class=”titulo-principal”>Meus Objetivos do ano<span>_<span></h2>
-    .titulo-principal span {
-        color: var(--verde); }
-        .botao { font-family: «Crakra Petch», sans-serif;
-            background-color: var(--botao-inativo);
-            color: var(--branco); display: flex;
-            justify-content: center;
-            padding: 1em;
-            font-size: 18px;
-            align-items: center;
-            width: 100%;
-            }
-            border-bottom: 4px solid var(--botao-ativo); border-left: 2px solid var(--botao-ativo); border-right: 2px solid var(--botao-ativo);
-border-top: none;
-.botoes { display: block;
-}
-@media screen and (min-width: 768px) { .botoes { display: flex;
-}
-}.botao:first-child { border-radius: 40px 0 0 0;
-}
-.botao:last-child { border-radius: 0 40px 0 0;
-}
+    nav a {
+        text-decoration: none;
+        color: var(--bg-color);
+        margin: 0 2rem 1rem 0rem;
+        font-size: 1.2rem;
+    }
